@@ -10,7 +10,7 @@
             <form action="response.php" method="GET">
                 <div>
                     <label for="paragraph"> Paragrafo: </label>
-                    <textarea name="paragrafo" id="paragraph" cols="30" rows="10"></textarea>
+                    <textarea name="paragraph" id="paragraph" cols="30" rows="10"></textarea>
                 </div>
                 <div>
                     <label for="bad_word">Parola da censurare:</label>
