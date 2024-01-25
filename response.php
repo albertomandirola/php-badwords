@@ -7,6 +7,12 @@ $bad_word = $_GET['bad_word'];
 // Create variable whose value is the length of the paragraph, take with strlen() function
 $lenght_paragraph = strlen($paragraph);
 
+// Create variable whose value is the paragraph with '***' that replace the bad word, thanks by str_replace() function
+$censured_paragraph = str_replace($bad_word, '***', $paragraph);
+
+// Create variable whose value is the length of the paragraph, take with strlen() function
+$lenght_censured_paragraph = strlen($censured_paragraph);
+
 
 ?>
 
@@ -23,6 +29,9 @@ $lenght_paragraph = strlen($paragraph);
         <p class="text-white">Paragrafo senza censura: <?php echo $paragraph ?></p>
         <p class="text-white">Lungezza del paragrafo: <?php echo $lenght_paragraph ?></p>
     </div>
-    
+    <div>
+        <p class="text-white">Paragrafo censurato: <?php echo $censured_paragraph ?></p>
+        <p class="text-white">Lungezza del paragrafo censurato: <?php echo $lenght_censured_paragraph ?></p>
+    </div>
 </body>
 </html>
